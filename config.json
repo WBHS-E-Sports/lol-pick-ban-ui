@@ -1,19 +1,19 @@
 {
   "frontend": {
-    "scoreEnabled": true,
+    "scoreEnabled": false,
     "spellsEnabled": true,
     "coachesEnabled": true,
     "blueTeam": {
-      "name": "Team Blue",
+      "name": "WBHS",
       "score": 2,
       "coach": "Coach Blue",
-      "color": "rgb(0,151,196)"
+      "color": "rgb(20,156,252)"
     },
     "redTeam": {
-      "name": "Team Red",
+      "name": "Away",
       "score": 1,
       "coach": "Coach Red",
-      "color": "rgb(222,40,70)"
+      "color": "rgb(204,170,16)"
     },
     "patch": "9.19"
   },
