@@ -1,0 +1,16 @@
+version: "3"
+services: 
+    backend:
+        image: ghcr.io/wbhs-e-sports/pb-backend:latest
+        # Host networking used to access lol game api only available on 127.0.0.1 on the host.
+        network_mode: "host"
+        volumes: 
+            - pb-backcache:/app/cache  # Caches assets to reduce startup time.
+        # command: -- --data recordings/tournament-draft  # Test data
+    frontend:
+        image: ghcr.io/wbhs-e-sports/pb-frontend:latest
+        ports: 
+            - "3000:3000"
+
+volumes: 
+    pb-backcache:
